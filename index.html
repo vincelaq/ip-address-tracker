@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+
+ 
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+
+</head>
+<body>
+  <div id="container">
+    <div id="title">
+      IP Address Tracker
+    </div>
+    <div >
+      <form id="search">
+        <input name="search" id="searchBox" placeholder="Search for any IP address or domain" type="text">
+        <input id="searchButton" type="submit" value=">">
+      </form>
+    </div>
+    <div id="info">
+      <div id="ip" class="info-container right">
+        <div class="info-container-title">
+          IP Address
+        </div>
+        <div id="ip-content" class="info-container-content">
+          192.212.174.101 <!--placeholder-->
+        </div>
+      </div>
+      <div class="info-divider"></div>
+      <div id="location" class="info-container right">
+        <div class="info-container-title">
+          Location
+        </div>
+        <div id="location-content" class="info-container-content">
+          Brooklyn, NY
+          <br>10001 <!--placeholder-->
+        </div>
+      </div>
+      <div class="info-divider"></div>
+      <div id="timezone" class="info-container right">
+        <div class="info-container-title">
+          Timezone
+        </div>
+        <div id="timezone-content" class="info-container-content">
+          UTC <!-- add offset value dynamically using the API -->
+        </div>
+      </div>
+      <div class="info-divider"></div>
+      <div id="isp" class="info-container">
+        <div class="info-container-title">
+          ISP
+        </div>
+        <div id="isp-content" class="info-container-content">
+          SpaceX Starlink <!--placeholder-->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="map-container">
+      <div id="mapid">
+        <script src="script.js"></script>
+      </div>
+  </div>
+</body>
+</html>

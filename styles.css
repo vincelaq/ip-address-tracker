@@ -1,0 +1,83 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+#mapid { height: 500px; }
+#container {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Rubik', sans-serif;
+    background-image: url('/images/pattern-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px; /* temp */
+    
+}
+#info {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+#search {
+    margin: 24px;
+    display: flex;
+}
+#searchBox {
+    font-family: 'Rubik', sans-serif;
+    width: 356px;
+    height: 36px;
+    margin-right: 0;
+    padding-left: 18px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: none;
+}
+#searchButton {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    color: white;
+    background-color: black;
+    height: 38px;
+    width: 36px;
+    margin-left: 0;
+    border:none;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#title {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 24px;
+}
+#info {
+    background-color: white;
+    border-radius: 10px;
+    height: 96px;
+}
+.info-container {
+    width: 180px;
+    height: 80px;
+    padding: 16px;
+}
+.info-container-title {
+    color: gray;
+    font-weight: 500;
+    font-size: .7rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.info-container-content {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.info-divider {
+    height: 60px;
+    border-right: 1px solid lightgray;
+}
+
+input:focus {
+    outline: none;
+}
